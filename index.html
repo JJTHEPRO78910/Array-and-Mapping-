@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title> Array and Mapping </title>
+    </head>
+    <body>
+         <h1> Multiply every element in the array with 10: </h1>
+         <p id="product_value">Multiply every element in the array with 10: </p>
+        <h1> Now lets see that in acending or decending order. Click the buttons below to make it acending, or decending.</h1>
+         <button onclick="Sarah()"> Acending </button>
+        <button onclick="William()"> Decending </button>
+        <script>
+            var numbers = [84,9349,3493,49];
+
+
+function myFunction(num) {
+
+return num * 10;
+
+}
+
+var newarray = numbers.map(myFunction);
+
+document.getElementById("product_value").innerHTML = newarray;
+
+var x=[84,9349,3493,49];
+            document.getElementById("product_value").innerHTML=x;
+            function Sarah(){
+                x.sort(function(a, b){return a - b});
+                document.getElementById("product_value").innerHTML=x;
+
+            }
+            function William(){
+                x.sort(function(a, b){return b - a});
+                document.getElementById("product_value").innerHTML=x;
+
+            }
+         </script>
+        </body>
+</html>
